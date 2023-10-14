@@ -1,38 +1,466 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Kanit-black-italic';
+  src: url('../public/fonts/Kanit-BlackItalic.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Kanit-black';
+  src: url('../public/fonts/Kanit-Black.ttf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Kanit-bold';
+  src: url('../public/fonts/Kanit-Bold.ttf');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@font-face {
+  font-family: 'Kanit-bold-italic';
+  src: url('../public/fonts/Kanit-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Kanit-extra-bold';
+  src: url('../public/fonts/Kanit-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Kanit-italic';
+  src: url('../public/fonts/Kanit-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Kanit-light';
+  src: url('../public/fonts/Kanit-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Kanit-light-italic';
+  src: url('../public/fonts/Kanit-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Kanit-medium';
+  src: url('../public/fonts/Kanit-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Kanit-medium-italic';
+  src: url('../public/fonts/Kanit-MediumItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Kanit-regular';
+  src: url('../public/fonts/Kanit-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Kanit-thin-italic';
+  src: url('../public/fonts/Kanit-ThinItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Octuple-max';
+  src: url('../public/fonts/Octuple-max-demo.ttf')
+}
+
+@font-face {
+  font-family: 'Plank';
+  src: url('../public/fonts/PLANK___.TTF');
+}
+
+:root {
+  --laranja: #ea5d0f;
+}
+
+* {
+  margin: 0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  margin: 0;
+  /* background-image: linear-gradient(-45deg, #0a00c1 -80%, #0F0030 100%); */
+  background-color: #0F0030;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.saibamais button {
+  background-color: var(--laranja);
+  border-radius: 50px;
+  height: 35px;
+  width: 120px;
+  border: none;
+  color: black;
+  font-size: 1vw;
+  font-family: 'Kanit-medium';
+  transition: 0.2s;
+}
+
+.saibamais button:hover {
+  background-color: white;
+}
+
+
+/* ----------- Barra de navegação ----------- */
+.nav_bar {
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 3%;
+}
+
+.esquerda {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.esquerda a {
+  padding: 0 12%;
+  font-size: 1vw;
+  text-decoration: none;
+  font-family: 'Kanit-regular';
+}
+
+
+/* ----------- Banner principal ----------- */
+.Banner {
+  display: flex;
+  align-items: center;
+}
+
+.texto {
+  margin-left: 4%;
+  width: 100%;
+  z-index: 1;
+  margin-top: -10%;
+  margin-right: -30%;
+}
+
+.texto h1 {
+  font-family: 'Octuple-max';
+  font-size: 6vw;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.texto p {
+  font-family: 'Kanit-regular';
+  line-height: 120%;
+  font-size: 1.5vw;
+  width: 40%;
+  padding: 5% 0
+}
+
+.imagem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 150%;
+  right: 0;
+}
+
+.imagem img {
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-bottom-left-radius: 70px;
+  max-width: 95%;
+
+}
+
+.imagem h2 {
+  font-family: 'Plank';
+  font-size: 6vw;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+  padding: 10px;
+  margin-top: -6%;
+}
+
+
+/* ----------- Serviços ----------- */
+.Servicos {
+  display: flex;
+  align-items: center;
+  margin: 1% 4% 4% 4%;
+}
+
+.Servicos .imagens {
+  display: flex;
+}
+
+.Servicos #star {
+  z-index: 1;
+  margin-right: -31px;
+  margin-top: -33.8%;
+  width: 60px;
+  border: none;
+}
+
+.Servicos img {
+  left: 0;
+  border: 2px solid white;
+  border-bottom-right-radius: 40px;
+  max-width: 50%;
+}
+
+.Servicos .textos {
+  margin-top: -5%;
+  max-width: 50%;
+  padding-left: 6%;
+}
+
+.Servicos h2 {
+  font-family: 'Kanit-medium';
+  font-size: 4vw;
+}
+
+.Servicos p {
+  padding: 3% 0 5% 0;
+  width: 60%;
+  font-family: 'Kanit-regular';
+  font-size: 1.5vw;
+  line-height: 120%;
+}
+
+.Servicos #letra_japonesa {
+  z-index: 1;
+  margin-right: -31px;
+  margin-bottom: -40%;
+  width: 8%;
+  border: none;
+  border-radius: none;
+  padding-bottom: 4%;
+}
+
+
+/* ----------- O que oferecemos ----------- */
+.oqueoferecemos {
+}
+
+.oqueoferecemos .titulo {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.oqueoferecemos .titulo hr {
+  border: 1px solid white;
+  width: 65%;
+}
+
+.oqueoferecemos h1 {
+  padding-right: 3%;
+  font-family: 'Kanit-medium';
+  font-size: 3vw;
+}
+
+.oqueoferecemos .ativo {
+  align-items: center;
+  margin: 4% 0;
+  width: 80%;
+  height: 140px;
+  display: flex;
+  border: 1px solid white;
+  border-bottom-right-radius: 70px;
+}
+
+.ativo #star {
+  z-index: 1;
+  height: 80px;
+  margin-top: -145px;
+  margin-left: 30px;
+}
+
+.icones {
+  display: flex;
+  width: 40%;
+  margin: 4%;
+  justify-content: space-between;
+}
+
+#icone {
+  object-fit: contain;
+  width: 50px;
+  height: 50px;
+  padding: 3%;
+  background-color: white;
+}
+
+#icone:hover {
+  object-fit: contain;
+  width: 50px;
+  height: 50px;
+  padding: 3%;
+  background-color: var(--laranja);
+}
+
+.ativo #icone {
+  width: 60px;
+  height: 60px;
+  padding: 1%;
+  margin: 0 5%;
+  background-color: var(--laranja);
+}
+
+.ativo p {
+  width: 60%;
+  font-family: 'Kanit-medium';
+  font-size: 1.8vw;
+}
+
+.oqueoferecemos .titulos {
+  z-index: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 500%;
+  margin-top: -7%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.oqueoferecemos span{
+  font-family: 'Plank';
+  padding: 10px;
+}
+
+.oqueoferecemos h2{
+  z-index: 1;
+  font-family: 'Plank';
+  font-size: 6vw;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+  padding: 10px;
+  line-height: 80%;
+}
+
+
+/* ----------- Quem passou por aqui? ----------- */
+.quemPassouAqui {
+  display: flex;
+  flex-direction: column;
+  margin-top: -12%;
+}
+
+.quemPassouAqui h1 {
+  padding-left: 4%;
+  font-family: 'Kanit-medium-italic';
+  font-size: 3.2vw;
+  padding-bottom: 3%;
+}
+
+.quemPassouAqui img {
+  border: 2px solid white;
+  border-bottom-left-radius: 70px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.linhaDeNomes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: 'Kanit-regular';
+  font-size: 1.2vw;
+  margin: 3% 0;
+}
+
+.quemPassouAqui #star{
+  margin: -52px 0 -30px 300px;
+  width: 60px;
+  padding: 0.5%;
+  border: none;
+}
+
+
+/* ----------- Alguma Dúvida? ----------- */
+.algumaDuvida{
+  margin: 3% 0;
+  /* border: 1px solid tomato; */
+}
+
+.algumaDuvida h1 {
+  font-family: 'Octuple-max';
+  font-size: 5vw;
+  text-align: center;
+}
+
+.algumaDuvida .botao{
+  margin: 4% auto 0 ;
+  width: 120px;
+}
+
+.algumaDuvida img{
+  width: 3%;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+  padding: 0 2%;
+  margin-top: 2%;
+}
+
+
+/* ----------- Rodapé ----------- */
+.rodape{
+  margin: 1% auto;
+  width: 96%;
+}
+
+.area_rodape{
+  display: flex;
+  border: 1px solid white;
+  border-bottom-right-radius: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.area_rodape h1{
+  font-family: 'kanit-medium';
+  font-size: 4vw;
+  /* border: 1px solid white; */
+}
+
+.links{
+  width: 60%;
+  justify-content: space-between;
+  display: flex;
+  /* border: 2px solid yellow; */
+  margin: 5% 0;
+}
+
+.links h3{
+  font-family: 'kanit-medium';
+  font-size: 2vw;
+}
+
+#menu{
+  /* border: 1px solid white; */
+  font-family: 'kanit-regular';
+  font-size: 1.3vw;
+}
+
+.social_icons{
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social_icons img{
+  object-fit: contain;
+  width: 60%;
+  margin: 20%;
+  padding: 15%;
+  background-color: white;
+}
+
+.area_rodape .social_icons img:hover {
+  background-color: var(--laranja);
 }
