@@ -110,6 +110,7 @@ body {
 }
 
 .esquerda {
+  /* border: 1px solid white; */
   width: 40%;
   display: flex;
   align-items: center;
@@ -117,6 +118,7 @@ body {
 }
 
 .esquerda a {
+  /* border: 1px solid white; */
   padding: 0 12%;
   font-size: 1vw;
   text-decoration: none;
