@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.16386c35.css",
+    "main.js": "/static/js/main.a73a047d.js",
+    "static/js/787.97552522.chunk.js": "/static/js/787.97552522.chunk.js",
+    "static/media/imagem01.png": "/static/media/imagem01.7358368880099cd8e9df.png",
+    "static/media/foto02.jpg": "/static/media/foto02.c68aa07b26b979edebee.jpg",
+    "static/media/imagem02.jpg": "/static/media/imagem02.bbb2d7621a13b576b852.jpg",
+    "static/media/foto04.jpg": "/static/media/foto04.450d95621a6bd98078f8.jpg",
+    "static/media/foto01.jpg": "/static/media/foto01.774a14da92ee22779e70.jpg",
+    "static/media/foto03.jpg": "/static/media/foto03.3cbc74fa52abefa2ca89.jpg",
+    "static/media/podcast.jpg": "/static/media/podcast.37cfadc4c2d5c3aed2e2.jpg",
+    "static/media/foto05.jpg": "/static/media/foto05.554b813d5ae4efc9bca6.jpg",
+    "static/media/BannerLocal.png": "/static/media/BannerLocal.9ca07445c4520c182521.png",
+    "static/media/Kanit-BlackItalic.ttf": "/static/media/Kanit-BlackItalic.a7c561ef3b2759658a59.ttf",
+    "static/media/Kanit-BoldItalic.ttf": "/static/media/Kanit-BoldItalic.927b59d31438cdaed223.ttf",
+    "static/media/Kanit-ExtraBold.ttf": "/static/media/Kanit-ExtraBold.c4e2a525f567e676a819.ttf",
+    "static/media/Kanit-Black.ttf": "/static/media/Kanit-Black.ff456266a65e712bce54.ttf",
+    "static/media/Kanit-Bold.ttf": "/static/media/Kanit-Bold.46cd98a815b9874526ad.ttf",
+    "static/media/Kanit-MediumItalic.ttf": "/static/media/Kanit-MediumItalic.c4075ca55800c760916a.ttf",
+    "static/media/Kanit-Italic.ttf": "/static/media/Kanit-Italic.af5b1c62659b287d31b6.ttf",
+    "static/media/Kanit-LightItalic.ttf": "/static/media/Kanit-LightItalic.779790df6247540dd8fb.ttf",
+    "static/media/Kanit-Medium.ttf": "/static/media/Kanit-Medium.786fd6bb96ce0cf5c5b2.ttf",
+    "static/media/Kanit-Regular.ttf": "/static/media/Kanit-Regular.f3bae13d78ced30b6ea3.ttf",
+    "static/media/Kanit-Light.ttf": "/static/media/Kanit-Light.7b6b95563f4c5697d973.ttf",
+    "static/media/Kanit-ThinItalic.ttf": "/static/media/Kanit-ThinItalic.be401212d54bd3ca995e.ttf",
+    "static/media/PLANK___.TTF": "/static/media/PLANK___.024eece303998977a029.TTF",
+    "static/media/Octuple-max-demo.ttf": "/static/media/Octuple-max-demo.f542e6a85e69dff5da57.ttf",
+    "index.html": "/index.html",
+    "main.16386c35.css.map": "/static/css/main.16386c35.css.map",
+    "main.a73a047d.js.map": "/static/js/main.a73a047d.js.map",
+    "787.97552522.chunk.js.map": "/static/js/787.97552522.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16386c35.css",
+    "static/js/main.a73a047d.js"
+  ]
+}
