@@ -1,17 +1,16 @@
 /* ---------- Página de Localização ----------- */
-
-.bannerLocal .titulo {
+.bannerLocal .tituloLocal {
     display: flex;
     align-items: center;
 }
 
-.titulo hr {
+.tituloLocal hr {
     height: 100%;
     border: 1px solid white;
     width: 35%;
 }
 
-.titulo h1 {
+.tituloLocal h1 {
     font-family: 'Plank';
     font-size: 4.8vw;
     padding-left: 3%;
@@ -38,7 +37,6 @@
 }
 
 .localInfo .map {
-    /* border: 1px solid white; */
     width: 50%;
     margin: 0 4%;
 }
@@ -51,7 +49,6 @@
 }
 
 .localInfo .txt {
-    /* border: 1px solid white; */
     margin-left: 3%;
     height: 50%;
 }
@@ -62,7 +59,6 @@
 }
 
 .localInfo .txt p {
-    /* border: 1px solid white; */
     font-size: 1.5vw;
     padding: 3% 0;
     width: 50%;
@@ -78,34 +74,563 @@
     right: 0;
     margin-left: 89%;
     margin-top: -25%;
-    /* border: 1px solid white; */
 }
 
 
 
 /* ---------- Página de Serviços ----------- */
-
-.paginaServicos {}
-
-.paginaServicos .titulo {
+.paginaServicos .tituloServ {
     justify-content: flex-end;
     align-items: center;
     display: flex;
+    margin-top: 3%;
 }
 
-.paginaServicos .titulo h1 {
+.paginaServicos .tituloServ h1 {
+    font-family: 'Octuple-max';
     margin-right: 5%;
-    font-size: 5vw;
+    font-size: 4vw;
 }
 
-.paginaServicos .titulo hr {
-   width: 35%;
+.paginaServicos .tituloServ hr {
+    width: 40%;
 }
 
-.paginaServicos .titulo img {
+.paginaServicos .tituloServ img {
     z-index: 1;
     margin-right: -1%;
     margin-top: -0.2%;
     width: 3%;
-    /* border: 1px solid white; */
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 100%;
+    margin: 4% auto;
+}
+
+.cardsElementos {
+    border: 1px solid white;
+    width: 30%;
+    margin: 2% 1.5%;
+}
+
+.cardsTxt {
+    margin: 2% 7%;
+}
+
+.cards .cardsElementos img {
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.cards .cardsElementos h2 {
+    font-family: 'Kanit-medium';
+    font-size: 3vw;
+}
+
+.cards .cardsElementos p {
+    font-family: 'Kanit-Regular';
+    font-size: 1.4vw;
+    margin-bottom: 5%;
+}
+
+#letra_japonesa_serv {
+    z-index: 1;
+    margin-left: 105%;
+    margin-top: -30%;
+    height: 250%;
+    width: 4%;
+    border: none;
+    border-radius: none;
+    padding-bottom: 4%;
+}
+
+
+
+/* ---------- Página de Contatos ----------- */
+.soProTitulo {
+    margin: 3% 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.soProTitulo .tituloBack {
+    z-index: 2;
+    margin: 0 auto;
+    width: 45%;
+    background-color: #0F0030;
+    display: flex;
+}
+
+.soProTitulo h2 {
+    z-index: 1;
+    font-family: 'Octuple-max';
+    font-size: 4vw;
+    text-align: center;
+}
+
+#starContato {
+    margin-left: 10%;
+    margin-top: 3%;
+    width: 50px;
+    border: none;
+}
+
+.entreEmContato {
+    z-index: 1;
+    display: flex;
+    margin: 0 6%;
+    width: 94%;
+    margin-top: -2%;
+}
+
+#letra_japonesa_cont {
+    margin-top: 15%;
+    margin-right: 2%;
+    height: 30%;
+    width: 2%;
+    border: none;
+    border-radius: none;
+    padding-bottom: 4%;
+}
+
+.entreEmContato #setas {
+    float: right;
+    margin-top: -6.8%;
+    width: 30%;
+}
+
+.entreEmContato form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contatosCapsula {
+    width: 100%;
+}
+
+.section {
+    border: 1px solid white;
+    border-right: none;
+    border-bottom-left-radius: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 1%;
+    margin-top: -35px;
+}
+
+form {
+    padding: 3%;
+    width: 35%;
+}
+
+form input {
+    height: 18%;
+    margin: 1.8% 0;
+    padding: 2%;
+    font-family: 'Kanit-regular';
+    font-size: 1.2vw;
+    color: black;
+}
+
+input[type="text"]:last-of-type {
+    height: 70%;
+}
+
+form button {
+    background-color: var(--laranja);
+    border-bottom-left-radius: 20px;
+    height: 30%;
+    border: none;
+    color: white;
+    font-size: 1.6vw;
+    font-family: 'Kanit-medium';
+    transition: 0.2s;
+    margin-top: 1.8%;
+}
+
+form button:hover {
+    background-color: white;
+    color: var(--laranja);
+}
+
+.nossasInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0 3% 3%;
+    width: 50%;
+}
+
+.nossasInfoTitulo {
+    display: flex;
+    align-items: center;
+}
+
+.nossasInfoTitulo h3 {
+    font-family: 'Kanit-bold-italic';
+    font-size: 3vw;
+    margin-right: 4%;
+    flex-wrap: nowrap;
+}
+
+.nossasInfoTitulo hr {
+    border: 1px solid white;
+    width: 37%;
+    height: 0;
+}
+
+.ContatosInfos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10%;
+    margin-top: 3%;
+}
+
+.ContatosInfos {
+    font-size: 2.5vw;
+}
+
+.ContatosInfos li {
+    align-items: center;
+    display: flex;
+    padding: 8% 0;
+}
+
+.ContatosInfos p {
+    font-family: 'Kanit-Regular';
+    width: 100%;
+    font-size: 1.8vw;
+    padding-left: 8%;
+}
+
+.MapaContatos {
+    display: flex;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+.MapaContatos iframe {
+    border: none;
+    border: 3px solid white;
+    width: 100%;
+    height: 260px;
+    border-bottom-right-radius: 70px;
+}
+
+.MapaContatos h3 {
+    font-family: 'Kanit-black-italic';
+    -webkit-text-stroke: 1px white;
+    font-size: 5vw;
+    color: transparent;
+    width: 30%;
+    margin: 0 5%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- Versão Mobile ---------------------- */
+
+@media screen and (max-width: 767px) {
+
+    /* ---------- Página de Localização ----------- */
+    .bannerLocal .tituloLocal {
+        margin: 3% 0;
+    }
+
+    .tituloLocal hr {
+        width: 20%;
+    }
+
+    .tituloLocal h1 {
+        font-size: 5.5vw;
+    }
+
+    .bannerLocal img {
+        border-bottom-right-radius: 50px;
+        width: 95%;
+    }
+
+    .bannerLocal #star {
+        margin-bottom: -3.9%;
+        width: 6%;
+    }
+
+    .localInfo {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 8% 0;
+    }
+
+    .localInfo .map {
+        width: 100%;
+    }
+
+    .localInfo .map iframe {
+        border-bottom-left-radius: 30px;
+        height: 200px;
+    }
+
+    .localInfo .txt {
+        width: 80%;
+        margin: 4% auto 0;
+    }
+
+    .localInfo .txt h2 {
+        font-size: 7vw;
+    }
+
+    .localInfo .txt p {
+        font-size: 3.5vw;
+        width: 80%;
+    }
+
+    .localInfo .txt hr {
+        width: 40%;
+    }
+
+    .localInfo .txt img {
+        width: 8%;
+        margin-left: 113%;
+        margin-top: -100%;
+    }
+
+
+    /* ---------- Página de Serviços ----------- */
+    .paginaServicos .tituloServ {
+        margin: 5% 0;
+    }
+
+    .paginaServicos .tituloServ h1 {
+        font-size: 5vw;
+    }
+
+    .paginaServicos .tituloServ hr {
+        width: 20%;
+    }
+
+    .paginaServicos .tituloServ img {
+        margin-right: -1%;
+        margin-top: -0.3%;
+        width: 5%;
+    }
+
+    .cards {
+        width: 90%;
+    }
+
+    .cardsElementos {
+        width: 46%;
+    }
+
+    .cards .cardsElementos h2 {
+        font-size: 4vw;
+    }
+
+    .cards .cardsElementos p {
+        font-size: 2.3vw;
+    }
+
+    #letra_japonesa_serv {
+        margin-left: 97%;
+        margin-top: -40%;
+    }
+
+
+    /* ---------- Página de Contatos ----------- */
+    .soProTitulo {
+        margin: 3% 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .soProTitulo .tituloBack {
+        z-index: 2;
+        margin: 0 auto;
+        width: 67%;
+        background-color: #0F0030;
+        display: flex;
+    }
+
+    .soProTitulo h2 {
+        z-index: 1;
+        font-family: 'Octuple-max';
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    #starContato {
+        margin-left: 10%;
+        margin-top: 3%;
+        width: 30px;
+        border: none;
+    }
+
+    .entreEmContato {
+        z-index: 1;
+        display: flex;
+        margin: 0 0 0 auto;
+        width: 95%;
+    }
+
+    #letra_japonesa_cont {
+        margin-top: 10%;
+        margin-right: 2%;
+        height: 30%;
+        width: 3%;
+        border: none;
+        border-radius: none;
+        padding-bottom: 4%;
+        display: inline;
+    }
+
+    .entreEmContato #setas {
+        float: right;
+        margin-top: -6.8%;
+        width: 30%;
+        display: inline;
+    }
+
+    .entreEmContato form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contatosCapsula {
+        width: 100%;
+    }
+
+    .section {
+        border: 1px solid white;
+        border-right: none;
+        border-bottom-left-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2% 1%;
+        margin-top: -24px;
+    }
+
+    form {
+        padding: 3% 4%;
+        width: 90%;
+        height: 300px;
+    }
+
+    form input {
+        border-radius: 0;
+        height: 20%;
+        margin: 1% 0;
+        padding: 2%;
+        font-family: 'Kanit-regular';
+        font-size: 4vw;
+        color: black;
+    }
+
+    input[type="text"]:last-of-type {
+        height: 100%;
+    }
+
+    form button {
+        background-color: var(--laranja);
+        border-bottom-left-radius: 15px;
+        height: 35%;
+        border: none;
+        color: white;
+        font-size: 5vw;
+        font-family: 'Kanit-medium';
+        transition: 0.2s;
+        margin-top: 1.8%;
+    }
+
+    form button:hover {
+        background-color: white;
+        color: var(--laranja);
+    }
+
+    .nossasInfo {
+        display: flex;
+        flex-direction: column;
+        padding: 3% 0 ;
+        width: 94%;
+        margin-left: auto;
+
+    }
+
+    .nossasInfoTitulo {
+        display: flex;
+        align-items: center;
+    }
+
+    .nossasInfoTitulo h3 {
+        font-family: 'Kanit-bold-italic';
+        font-size: 6vw;
+        flex-wrap: nowrap;
+    }
+
+    .nossasInfoTitulo hr {
+        border: 1px solid white;
+        width: 20%;
+        height: 0;
+    }
+
+    .ContatosInfos {
+        width: 90%;
+        justify-content: space-between;
+        font-size: 5vw;
+        margin-right: auto;
+        padding: 0 3%;
+    }
+
+    .ContatosInfos li {
+        align-items: center;
+        display: flex;
+        padding: 8% 0;
+    }
+
+    .ContatosInfos ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .ContatosInfos p {
+        font-family: 'Kanit-Regular';
+        width: 100%;
+        font-size: 3.5vw;
+        padding-left: 8%;
+    }
+
+    .MapaContatos {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+        align-items: center;
+    }
+
+    .MapaContatos iframe {
+        width: 90%;
+        margin-right: auto;
+        height: 200px;
+        border-bottom-right-radius: 40px;
+    }
+
+    .MapaContatos h3 {
+        font-size: 7vw;
+        color: transparent;
+        width: 100%;
+        margin: 3% auto 0;
+        text-align: center;
+        /* border: 1px solid white; */
+    }
 }

@@ -1,6 +1,7 @@
 import './Paginas.css'
 import NavBar from '../Components/Navbar';
 import Rodape from '../Components/Rodape';
+import letra_japonesa from '../midia/letra-japonesa.png'
 import star from '../midia/star.png'
 
 //Import das fotos 
@@ -10,18 +11,17 @@ import foto03 from '../midia/foto03.jpg'
 import foto04 from '../midia/foto04.jpg'
 import foto05 from '../midia/foto05.jpg'
 
-export default function Servicos(){
-    return(
+export default function PagServicos() {
+    return (
         <div className="paginaServicos">
-            <NavBar/>
-            <div className="titulo">
+            <NavBar />
+            <div className="tituloServ">
                 <h1>Nossos Serviços</h1>
-                <img src={star}/>
+                <img src={star} />
                 <hr />
-                <h1>Teste github</h1>
             </div>
-            <Cards/>
-            <Rodape/>
+            <Cards />
+            <Rodape />
         </div>
     )
 }
@@ -41,10 +41,13 @@ function Cards() {
             {conteudoCards.map((item, index) => (
                 <div className="cardsElementos">
                     <img src={conteudoCards[index].foto} alt="" />
-                    <h2>{conteudoCards[index].nome}</h2>
-                    <p>{conteudoCards[index].descricao}</p>
+                    <div className="cardsTxt">
+                        <h2>{conteudoCards[index].nome}</h2>
+                        <p>{conteudoCards[index].descricao}</p>
+                    </div>
                 </div>
             ))}
+            <img id="letra_japonesa_serv" src={letra_japonesa} />
         </div>
     )
 }

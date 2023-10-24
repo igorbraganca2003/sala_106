@@ -1,14 +1,17 @@
 import React from 'react';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ReactDOM from 'react-dom/client';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
+// Import React Pages
+import './index.css';
+import App from './App';
 import Localizacao from './Paginas/Localizacao';
 import Servicos from './Paginas/Servicos';
+import Contatos from './Paginas/Contatos'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/servicos",
     element: <Servicos />
+  },
+  {
+    path: "/Contatos",
+    element: <Contatos />
   }
 ]);
 

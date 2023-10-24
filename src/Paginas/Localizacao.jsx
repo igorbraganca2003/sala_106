@@ -19,7 +19,7 @@ export default function Localizacao() {
 function BannerLocal() {
     return (
         <div className="bannerLocal">
-            <div className="titulo">
+            <div className="tituloLocal">
                 <hr />
                 <h1>Nossa Localização</h1>
             </div>

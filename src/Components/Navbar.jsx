@@ -14,9 +14,13 @@ export default function NavBar() {
           <Link to="/servicos">Serviços</Link>
         </ol>
       </div>
+      <Link to="/Contatos">
+      <div className="saibamais">
       <a href="#">
-        <SaibaMais />
+        <button>Contatos</button>
       </a>
+    </div>
+      </Link>
     </div>
   );
 }

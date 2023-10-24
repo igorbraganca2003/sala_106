@@ -77,9 +77,16 @@
   color: white;
 }
 
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
 body {
   margin: 0;
-  /* background-image: linear-gradient(-45deg, #0a00c1 -80%, #0F0030 100%); */
+  /* background-image: linear-gradient(-45deg, #0a00c1 -10%, #0F0030 70%); */
   background-color: #0F0030;
 }
 
@@ -119,7 +126,8 @@ body {
 
 .esquerda a {
   /* border: 1px solid white; */
-  padding: 0 12%;
+  padding: 0 50px;
+  /* Reduzi o espaçamento horizontal para alinhar os links */
   font-size: 1vw;
   text-decoration: none;
   font-family: 'Kanit-regular';
@@ -240,9 +248,6 @@ body {
 
 
 /* ----------- O que oferecemos ----------- */
-.oqueoferecemos {
-}
-
 .oqueoferecemos .titulo {
   margin: 0 auto;
   display: flex;
@@ -261,11 +266,31 @@ body {
   font-size: 3vw;
 }
 
+.icones {
+  display: flex;
+  width: 50%;
+  margin: 5%;
+  justify-content: space-between;
+  /* border: 1px solid white; */
+}
+
+.FaIconsOQ {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  padding: 5%;
+}
+
+.FaIconsOQ:hover, .icone-ativo {
+  border: 1px solid var(--laranja);
+  color: var(--laranja);
+}
+
 .oqueoferecemos .ativo {
   align-items: center;
   margin: 4% 0;
   width: 80%;
-  height: 140px;
+  height: 180px;
   display: flex;
   border: 1px solid white;
   border-bottom-right-radius: 70px;
@@ -274,39 +299,17 @@ body {
 .ativo #star {
   z-index: 1;
   height: 80px;
-  margin-top: -145px;
+  margin-top: -182px;
   margin-left: 30px;
 }
 
-.icones {
-  display: flex;
-  width: 40%;
-  margin: 4%;
-  justify-content: space-between;
-}
-
-#icone {
-  object-fit: contain;
-  width: 50px;
-  height: 50px;
-  padding: 3%;
-  background-color: white;
-}
-
-#icone:hover {
-  object-fit: contain;
-  width: 50px;
-  height: 50px;
-  padding: 3%;
-  background-color: var(--laranja);
-}
-
-.ativo #icone {
+.ativo #iconeAtv {
   width: 60px;
   height: 60px;
-  padding: 1%;
-  margin: 0 5%;
   background-color: var(--laranja);
+  color: #0F0030;
+  padding: 2%;
+  margin: 0 5%;
 }
 
 .ativo p {
@@ -325,12 +328,7 @@ body {
   justify-content: flex-end;
 }
 
-.oqueoferecemos span{
-  font-family: 'Plank';
-  padding: 10px;
-}
-
-.oqueoferecemos h2{
+.oqueoferecemos h2 {
   z-index: 1;
   font-family: 'Plank';
   font-size: 6vw;
@@ -341,6 +339,10 @@ body {
   line-height: 80%;
 }
 
+.oqueoferecemos span {
+  font-family: 'Plank';
+  padding: 10px;
+}
 
 /* ----------- Quem passou por aqui? ----------- */
 .quemPassouAqui {
@@ -372,7 +374,7 @@ body {
   margin: 3% 0;
 }
 
-.quemPassouAqui #star{
+.quemPassouAqui #star {
   margin: -52px 0 -30px 300px;
   width: 60px;
   padding: 0.5%;
@@ -381,7 +383,7 @@ body {
 
 
 /* ----------- Alguma Dúvida? ----------- */
-.algumaDuvida{
+.algumaDuvida {
   margin: 3% 0;
   /* border: 1px solid tomato; */
 }
@@ -392,12 +394,12 @@ body {
   text-align: center;
 }
 
-.algumaDuvida .botao{
-  margin: 4% auto 0 ;
+.algumaDuvida .botao {
+  margin: 4% auto 0;
   width: 120px;
 }
 
-.algumaDuvida img{
+.algumaDuvida img {
   width: 3%;
   bottom: 0;
   display: flex;
@@ -409,60 +411,309 @@ body {
 
 
 /* ----------- Rodapé ----------- */
-.rodape{
+.rodape {
   margin: 1% auto;
   width: 96%;
 }
 
-.area_rodape{
+.area_rodape {
   display: flex;
   border: 1px solid white;
   border-bottom-right-radius: 70px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5%;
+  padding: 5%;
 }
 
-.area_rodape h1{
+.area_rodape h1 {
   font-family: 'kanit-medium';
   font-size: 4vw;
-  /* border: 1px solid white; */
 }
 
-.links{
+.links {
   width: 60%;
   justify-content: space-between;
   display: flex;
-  /* border: 2px solid yellow; */
-  margin: 5% 0;
 }
 
-.links h3{
+.links h3 {
   font-family: 'kanit-medium';
   font-size: 2vw;
 }
 
-#menu{
-  /* border: 1px solid white; */
+#menu {
   font-family: 'kanit-regular';
   font-size: 1.3vw;
 }
 
-.social_icons{
-  /* border: 1px solid white; */
+.social_icons {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 50px;
 }
 
-.social_icons img{
-  object-fit: contain;
-  width: 60%;
-  margin: 20%;
-  padding: 15%;
-  background-color: white;
+.FaIcons {
+  height: 8%;
+  border: 1px solid white;
+  padding: 20%;
+  margin: 10% 0;
 }
 
-.area_rodape .social_icons img:hover {
-  background-color: var(--laranja);
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- Versão Mobile ---------------------- */
+
+@media screen and (max-width: 767px) {
+  .saibamais button {
+    height: 20px;
+    width: 85px;
+    font-size: 2.3vw;
+    flex-wrap: nowrap;
+  }
+
+  .saibamais button:hover {
+    background-color: white;
+  }
+
+
+  /* ----------- Barra de navegação ----------- */
+  .nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 3%;
+  }
+
+  .esquerda {
+    width: 80%;
+  }
+
+  .esquerda ol {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .esquerda a {
+    font-size: 2.5vw;
+    padding: 0;
+  }
+
+
+  /* ----------- Banner principal ----------- */
+  .Banner {
+    margin-top: 4%;
+  }
+
+  .texto {
+    margin-top: -8%;
+    margin-right: -40%;
+  }
+
+  .texto h1 {
+    font-size: 7vw;
+    -webkit-text-stroke-width: 0.5px;
+  }
+
+  .texto p {
+    font-size: 2.2vw;
+    width: 35%;
+  }
+
+  .imagem {
+    width: 130%;
+  }
+
+  .imagem img {
+    border-bottom-left-radius: 40px;
+
+  }
+
+  .imagem h2 {
+    font-size: 7vw;
+    -webkit-text-stroke-width: 0.5px;
+    color: transparent;
+    padding: 10px;
+    margin-top: -10%;
+  }
+
+
+  /* ----------- Serviços ----------- */
+  .Servicos {
+    margin: 1% 4% 4% 3%;
+  }
+
+  .Servicos #star {
+    margin-right: -16px;
+    margin-top: -34.5%;
+    width: 30px;
+  }
+
+  .Servicos img {
+    border-bottom-right-radius: 30px;
+  }
+
+  .Servicos p {
+    padding: 3% 0 7% 0;
+    width: 80%;
+    font-size: 2vw;
+  }
+
+  .Servicos #letra_japonesa {
+    margin-right: -3px;
+    margin-bottom: -40%;
+    width: 5%;
+  }
+
+
+  /* ----------- O que oferecemos ----------- */
+  .oqueoferecemos .titulo {
+    margin: 0 5%;
+    width: 85%;
+    justify-content: space-between;
+  }
+
+  .oqueoferecemos .titulo hr {
+    width: 40%;
+  }
+
+  .oqueoferecemos h1 {
+    font-size: 5vw;
+  }
+
+  .oqueoferecemos .ativo {
+    width: 80%;
+    height: 80px;
+    border-bottom-right-radius: 30px;
+    border-left: none;
+  }
+
+  .ativo #star {
+    height: 40px;
+    margin-top: -83px;
+    margin-left: 10px;
+  }
+
+  .ativo #iconeAtv {
+    width: 40px;
+    height: 40px;
+    padding: 2%;
+  }
+
+  .ativo p {
+    width: 100%;
+    font-size: 3vw;
+  }
+
+  .icones {
+    width: 70%;
+  }
+
+  .FaIconsOQ {
+    width: 30px;
+    height: 30px;
+  }
+
+  .FaIconsOQ:hover, .icone-ativo {
+    border: 1px solid var(--laranja);
+    color: var(--laranja);
+  }
+
+
+  .oqueoferecemos .titulos {
+    margin-top: 3%;
+  }
+
+  .oqueoferecemos h2 {
+    -webkit-text-stroke-width: 0.5px;
+  }
+
+  .oqueoferecemos span {
+    font-family: 'Plank';
+    padding: 0;
+  }
+
+
+  /* ----------- Quem passou por aqui? ----------- */
+  .quemPassouAqui {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20%;
+  }
+
+  .quemPassouAqui h1 {
+    font-size: 4vw;
+  }
+
+  .quemPassouAqui img {
+    border-bottom-left-radius: 50px;
+  }
+
+  .linhaDeNomes {
+    font-size: 1.3vw;
+    margin: 3% 0;
+  }
+
+  .quemPassouAqui #star {
+    margin: -32px 0 -15px 300px;
+    width: 40px;
+  }
+
+
+  /* ----------- Alguma Dúvida? ----------- */
+  .algumaDuvida {
+    margin: 5% 0;
+  }
+
+  .algumaDuvida h1 {
+    font-size: 6vw;
+  }
+
+  .algumaDuvida .botao {
+    width: 80px;
+  }
+
+  .algumaDuvida img {
+    margin-top: 4%;
+  }
+
+
+  /* ----------- Rodapé ----------- */
+  .area_rodape {
+    border-bottom-right-radius: 50px;
+  }
+
+  .area_rodape h1 {
+    display: none;
+  }
+
+  .links {
+    width: 85%;
+  }
+
+  .links h3 {
+    font-size: 4vw;
+  }
+
+  #menu {
+    font-size: 2vw;
+  }
+
+  .social_icons {
+    width: 30px;
+  }
+  
+  #assinatura {
+    font-size: 2vw;
+  }
 }

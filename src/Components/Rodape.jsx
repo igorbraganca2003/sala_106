@@ -1,6 +1,8 @@
-import socila_icon01 from '../midia/social-icon01.png'
-import socila_icon02 from '../midia/social-icon02.png'
-import socila_icon03 from '../midia/social-icon03.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons'
+
 export default function Rodape() {
     return (
         <div className="rodape">
@@ -28,13 +30,19 @@ export default function Rodape() {
                         <p>email@exemplo.com.br</p>
                     </div>
                 </div>
-                <div className="social_icons">
-                    <img src={socila_icon01} alt="" />
-                    <img src={socila_icon02} alt="" />
-                    <img src={socila_icon03} alt="" />
-                </div>
+                    <SocialIcons />
             </div>
-            <a href='https://igorbraganca2003.github.io/Portifolio/Index/' target='blank'>2023 @igor.braganca</a>
+            <a href='https://igorbraganca2003.github.io/Portifolio/Index/' target='blank' id="assinatura">2023 @igor.braganca</a>
+        </div>
+    )
+}
+
+export function SocialIcons() {
+    return (
+        <div className="social_icons">
+            <a href="#"><FontAwesomeIcon icon={faXTwitter} className='FaIcons'/></a>
+            <a href="#"><FontAwesomeIcon icon={faInstagram} id='FaIcons' className='FaIcons'/></a>
+            <a href="#"><FontAwesomeIcon icon={faWhatsapp} id='FaIcons' className='FaIcons'/></a>
         </div>
     )
 }
